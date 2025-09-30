@@ -64,12 +64,15 @@
                 
                 <div class="space-y-6">
                     <h3 class="font-semibold text-slate-700 text-sm uppercase pt-2">Revenue Drivers</h3>
-                    <div><label for="studentIntake" class="flex justify-between text-sm font-medium text-slate-700"><span>Year-1 Student Intake</span><span id="studentIntakeValue" class="font-bold text-indigo-600">500</span></label><input id="studentIntake" type="range" min="500" max="2500" value="500" step="10" class="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer"></div>
-                    <div><label for="annualFee" class="flex justify-between text-sm font-medium text-slate-700"><span>Gross Annual Fee (₹)</span><span id="annualFeeValue" class="font-bold text-indigo-600">2,20,000</span></label><input id="annualFee" type="range" min="100000" max="700000" value="220000" step="5000" class="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer"></div>
-                    <div><label for="scholarship" class="flex justify-between text-sm font-medium text-slate-700"><span>Avg. Scholarship (%)</span><span id="scholarshipValue" class="font-bold text-indigo-600">10%</span></label><input id="scholarship" type="range" min="10" max="50" value="10" step="1" class="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer"></div>
+                    <div><label for="studentIntake_xi" class="flex justify-between text-sm font-medium text-slate-700"><span>Year-1 Class XI Intake</span><span id="studentIntake_xiValue" class="font-bold text-indigo-600">250</span></label><input id="studentIntake_xi" type="range" min="250" max="1250" value="250" step="10" class="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer"></div>
+                    <div><label for="studentIntake_xii" class="flex justify-between text-sm font-medium text-slate-700"><span>Year-1 Class XII Intake</span><span id="studentIntake_xiiValue" class="font-bold text-indigo-600">250</span></label><input id="studentIntake_xii" type="range" min="250" max="1250" value="250" step="10" class="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer"></div>
+                    <div><label for="annualFee_xi" class="flex justify-between text-sm font-medium text-slate-700"><span>Gross Annual Fee (XI) (₹)</span><span id="annualFee_xiValue" class="font-bold text-indigo-600">2,20,000</span></label><input id="annualFee_xi" type="range" min="100000" max="700000" value="220000" step="5000" class="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer"></div>
+                    <div><label for="annualFee_xii" class="flex justify-between text-sm font-medium text-slate-700"><span>Gross Annual Fee (XII) (₹)</span><span id="annualFee_xiiValue" class="font-bold text-indigo-600">2,20,000</span></label><input id="annualFee_xii" type="range" min="100000" max="700000" value="220000" step="5000" class="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer"></div>
+                    <div><label for="scholarship_xi" class="flex justify-between text-sm font-medium text-slate-700"><span>Avg. Scholarship (XI) (%)</span><span id="scholarship_xiValue" class="font-bold text-indigo-600">10%</span></label><input id="scholarship_xi" type="range" min="10" max="50" value="10" step="1" class="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer"></div>
+                    <div><label for="scholarship_xii" class="flex justify-between text-sm font-medium text-slate-700"><span>Avg. Scholarship (XII) (%)</span><span id="scholarship_xiiValue" class="font-bold text-indigo-600">10%</span></label><input id="scholarship_xii" type="range" min="10" max="50" value="10" step="1" class="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer"></div>
                     <div><label for="appRevenue" class="flex justify-between text-sm font-medium text-slate-700"><span>Ancillary App Revenue (₹ Lakhs)</span><span id="appRevenueValue" class="font-bold text-indigo-600">10</span></label><input id="appRevenue" type="range" min="0" max="50" value="10" step="1" class="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer"></div>
                     <div><label for="attrition" class="flex justify-between text-sm font-medium text-slate-700"><span>Student Attrition (%)</span><span id="attritionValue" class="font-bold text-indigo-600">5%</span></label><input id="attrition" type="range" min="0" max="20" value="5" step="1" class="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer"></div>
-                    
+
                     <h3 class="font-semibold text-slate-700 text-sm uppercase pt-2">Manpower (OpEx)</h3>
                     <div><label class="block text-sm font-medium text-slate-700">Leadership & Mgmt</label><div class="flex items-center space-x-2 text-xs"><span>Count: <b id="leadershipCountValue" class="text-indigo-600">3</b></span><input id="leadershipCount" type="range" min="0" max="10" value="3" step="1" class="w-full"></div><div class="flex items-center space-x-2 text-xs"><span>Salary (LPA): <b id="leadershipSalaryValue" class="font-bold text-indigo-600">25L</b></span><input id="leadershipSalary" type="range" min="15" max="50" value="25" step="1" class="w-full"></div></div>
                     <div><label class="block text-sm font-medium text-slate-700">Senior Faculty</label><div class="flex items-center space-x-2 text-xs"><span>Count: <b id="srFacultyCountValue" class="text-indigo-600">15</b></span><input id="srFacultyCount" type="range" min="3" max="100" value="15" step="1" class="w-full"></div><div class="flex items-center space-x-2 text-xs"><span>Salary (LPA): <b id="srFacultySalaryValue" class="text-indigo-600">25L</b></span><input id="srFacultySalary" type="range" min="15" max="70" value="25" step="1" class="w-full"></div></div>
@@ -81,6 +84,7 @@
                     <div><label for="marketingBudget" class="flex justify-between text-sm font-medium text-slate-700"><span>Y1 Marketing Budget (₹ Lakhs)</span><span id="marketingBudgetValue" class="font-bold text-indigo-600">40</span></label><input id="marketingBudget" type="range" min="0" max="500" value="40" step="1" class="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer"></div>
                     <div><label for="campusSize" class="flex justify-between text-sm font-medium text-slate-700"><span>Campus Size (sq. ft.)</span><span id="campusSizeValue" class="font-bold text-indigo-600">6500</span></label><input id="campusSize" type="range" min="3000" max="15000" value="6500" step="500" class="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer"></div>
                     <div><label for="rentPerSqFt" class="flex justify-between text-sm font-medium text-slate-700"><span>Rent per sq. ft. (₹)</span><span id="rentPerSqFtValue" class="font-bold text-indigo-600">55</span></label><input id="rentPerSqFt" type="range" min="30" max="100" value="55" step="5" class="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer"></div>
+                    <div><label for="utilities" class="flex justify-between text-sm font-medium text-slate-700"><span>Electricity & Utilities (₹ Lakhs)</span><span id="utilitiesValue" class="font-bold text-indigo-600">5</span></label><input id="utilities" type="range" min="0" max="20" value="5" step="1" class="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer"></div>
                     <div><label for="contingency" class="flex justify-between text-sm font-medium text-slate-700"><span>OpEx Contingency (%)</span><span id="contingencyValue" class="font-bold text-indigo-600">5%</span></label><input id="contingency" type="range" min="0" max="15" value="5" step="1" class="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer"></div>
 
                     <h3 class="font-semibold text-slate-700 text-sm uppercase pt-2">Annual Escalations</h3>
@@ -146,9 +150,12 @@
 
     // DOM Elements
     const sliders = {
-        studentIntake: document.getElementById('studentIntake'),
-        annualFee: document.getElementById('annualFee'),
-        scholarship: document.getElementById('scholarship'),
+        studentIntake_xi: document.getElementById('studentIntake_xi'),
+        studentIntake_xii: document.getElementById('studentIntake_xii'),
+        annualFee_xi: document.getElementById('annualFee_xi'),
+        annualFee_xii: document.getElementById('annualFee_xii'),
+        scholarship_xi: document.getElementById('scholarship_xi'),
+        scholarship_xii: document.getElementById('scholarship_xii'),
         appRevenue: document.getElementById('appRevenue'),
         attrition: document.getElementById('attrition'),
         leadershipCount: document.getElementById('leadershipCount'),
@@ -164,6 +171,7 @@
         marketingBudget: document.getElementById('marketingBudget'),
         campusSize: document.getElementById('campusSize'),
         rentPerSqFt: document.getElementById('rentPerSqFt'),
+        utilities: document.getElementById('utilities'),
         contingency: document.getElementById('contingency'),
         salaryEscalation: document.getElementById('salaryEscalation'),
         rentEscalation: document.getElementById('rentEscalation'),
@@ -173,9 +181,12 @@
     };
 
     const values = {
-        studentIntake: document.getElementById('studentIntakeValue'),
-        annualFee: document.getElementById('annualFeeValue'),
-        scholarship: document.getElementById('scholarshipValue'),
+        studentIntake_xi: document.getElementById('studentIntake_xiValue'),
+        studentIntake_xii: document.getElementById('studentIntake_xiiValue'),
+        annualFee_xi: document.getElementById('annualFee_xiValue'),
+        annualFee_xii: document.getElementById('annualFee_xiiValue'),
+        scholarship_xi: document.getElementById('scholarship_xiValue'),
+        scholarship_xii: document.getElementById('scholarship_xiiValue'),
         appRevenue: document.getElementById('appRevenueValue'),
         attrition: document.getElementById('attritionValue'),
         leadershipCount: document.getElementById('leadershipCountValue'),
@@ -191,6 +202,7 @@
         marketingBudget: document.getElementById('marketingBudgetValue'),
         campusSize: document.getElementById('campusSizeValue'),
         rentPerSqFt: document.getElementById('rentPerSqFtValue'),
+        utilities: document.getElementById('utilitiesValue'),
         contingency: document.getElementById('contingencyValue'),
         salaryEscalation: document.getElementById('salaryEscalationValue'),
         rentEscalation: document.getElementById('rentEscalationValue'),
@@ -205,7 +217,6 @@
     // Initial Data (Baseline from the plan)
     const baseData = {
         otherCapex: 1500000, // Legal, Licenses
-        otherOpex: 5000000, // Utilities & Misc
         gstRate: 0.18,
         coachingFeeRatio: 0.64, // 1.4L coaching / 2.2L total fee
     };
@@ -250,16 +261,25 @@
         const totalSalariesY1 = Object.values(manpowerCosts).reduce((a, b) => a + b, 0);
         const marketingCostY1 = input.marketingBudget * 100000;
         const rentCostY1 = input.campusSize * input.rentPerSqFt * 12;
+        const utilitiesCostY1 = input.utilities * 100000;
         const leaseDeposit = input.campusSize * input.rentPerSqFt * 6;
 
-        const grossTuitionRevenueY1 = input.studentIntake * input.annualFee;
-        const netFee = input.annualFee * (1 - (input.scholarship / 100));
-        const totalNetRevenueY1 = (input.studentIntake * netFee) + (input.appRevenue * 100000);
+        const grossTuitionRevenueY1_xi = input.studentIntake_xi * input.annualFee_xi;
+        const grossTuitionRevenueY1_xii = input.studentIntake_xii * input.annualFee_xii;
+        const grossTuitionRevenueY1 = grossTuitionRevenueY1_xi + grossTuitionRevenueY1_xii;
+
+        const netFee_xi = input.annualFee_xi * (1 - (input.scholarship_xi / 100));
+        const netFee_xii = input.annualFee_xii * (1 - (input.scholarship_xii / 100));
+        
+        const netRevenue_xi = input.studentIntake_xi * netFee_xi;
+        const netRevenue_xii = input.studentIntake_xii * netFee_xii;
+        
+        const totalNetRevenueY1 = netRevenue_xi + netRevenue_xii + (input.appRevenue * 100000);
         
         const coachingPortionRevenueY1 = grossTuitionRevenueY1 * baseData.coachingFeeRatio;
         const gstPayableY1 = coachingPortionRevenueY1 * baseData.gstRate;
 
-        const baseOpexY1 = totalSalariesY1 + marketingCostY1 + rentCostY1 + gstPayableY1 + baseData.otherOpex;
+        const baseOpexY1 = totalSalariesY1 + marketingCostY1 + rentCostY1 + gstPayableY1 + utilitiesCostY1;
         const contingencyAmountY1 = baseOpexY1 * (input.contingency / 100);
         const opexY1 = baseOpexY1 + contingencyAmountY1;
 
@@ -274,22 +294,23 @@
         // Year 2 & 3 Calculations with escalations
         const salaryEscFactor = 1 + input.salaryEscalation / 100;
         const rentEscFactor = 1 + input.rentEscalation / 100;
-        const intakeY2 = Math.floor(input.studentIntake * 1.3);
-        const returningStudentsY2 = input.studentIntake * (1 - (input.attrition / 100));
-        const totalNetRevenueY2 = (returningStudentsY2 + intakeY2) * netFee + (input.appRevenue * 100000 * 1.5);
+        const totalIntakeY1 = input.studentIntake_xi + input.studentIntake_xii;
+        const intakeY2 = Math.floor(totalIntakeY1 * 1.3);
+        const returningStudentsY2 = totalIntakeY1 * (1 - (input.attrition / 100));
+        const totalNetRevenueY2 = (returningStudentsY2 + intakeY2) * ((netFee_xi + netFee_xii)/2) + (input.appRevenue * 100000 * 1.5);
         const totalSalariesY2 = totalSalariesY1 * salaryEscFactor;
         const rentCostY2 = rentCostY1 * rentEscFactor;
-        const opexY2 = totalSalariesY2 + (marketingCostY1 * 0.8) + rentCostY2 + (gstPayableY1 * 1.3) + baseData.otherOpex * 1.05;
+        const opexY2 = totalSalariesY2 + (marketingCostY1 * 0.8) + rentCostY2 + (gstPayableY1 * 1.3) + utilitiesCostY1 * 1.05;
         const ebitdaY2 = totalNetRevenueY2 - opexY2;
         const pbtY2 = ebitdaY2 - (depreciation * 0.9);
         const patY2 = pbtY2 - (pbtY2 > 0 ? pbtY2 * 0.25 : 0);
         
         const intakeY3 = Math.floor(intakeY2 * 1.3);
         const returningStudentsY3 = intakeY2 * (1 - (input.attrition / 100));
-        const totalNetRevenueY3 = (returningStudentsY3 + intakeY3) * netFee + (input.appRevenue * 100000 * 2);
+        const totalNetRevenueY3 = (returningStudentsY3 + intakeY3) * ((netFee_xi + netFee_xii)/2) + (input.appRevenue * 100000 * 2);
         const totalSalariesY3 = totalSalariesY2 * salaryEscFactor;
         const rentCostY3 = rentCostY2 * rentEscFactor;
-        const opexY3 = totalSalariesY3 + (marketingCostY1 * 0.7) + rentCostY3 + (gstPayableY1 * 1.6) + baseData.otherOpex * 1.10;
+        const opexY3 = totalSalariesY3 + (marketingCostY1 * 0.7) + rentCostY3 + (gstPayableY1 * 1.6) + utilitiesCostY1 * 1.10;
         const ebitdaY3 = totalNetRevenueY3 - opexY3;
         const pbtY3 = ebitdaY3 - (depreciation * 0.81);
         const patY3 = pbtY3 - (pbtY3 > 0 ? pbtY3 * 0.25 : 0);
@@ -374,11 +395,14 @@
             ["Quantum College - Financial Summary"],
             [],
             ["Key Inputs", "Value", "", "Key Metrics", "Value"],
-            ["Y1 Student Intake", input.studentIntake, "", "Peak Funding Required", calculations.peakFunding],
-            ["Gross Annual Fee", input.annualFee, "", "Total CapEx", calculations.totalCapex],
-            ["Avg. Scholarship %", `${input.scholarship}%`, "", "Break-even Month", calculations.monthsToBreakeven],
-            ["Ancillary Revenue (Lakhs)", input.appRevenue, "", "Y1 EBITDA", calculations.ebitdaY1],
-            ["Student Attrition %", `${input.attrition}%`, "", "Y1 Net Profit (PAT)", calculations.patY1],
+            ["Y1 Class XI Intake", input.studentIntake_xi, "", "Peak Funding Required", calculations.peakFunding],
+            ["Y1 Class XII Intake", input.studentIntake_xii, "", "Total CapEx", calculations.totalCapex],
+            ["Gross Annual Fee (XI)", input.annualFee_xi, "", "Break-even Month", calculations.monthsToBreakeven],
+            ["Gross Annual Fee (XII)", input.annualFee_xii, "", "Y1 EBITDA", calculations.ebitdaY1],
+            ["Avg. Scholarship (XI) %", `${input.scholarship_xi}%`, "", "Y1 Net Profit (PAT)", calculations.patY1],
+            ["Avg. Scholarship (XII) %", `${input.scholarship_xii}%`, ""],
+            ["Ancillary Revenue (Lakhs)", input.appRevenue, ""],
+            ["Student Attrition %", `${input.attrition}%`, ""],
         ];
         const ws_summary = XLSX.utils.aoa_to_sheet(summaryData);
         XLSX.utils.book_append_sheet(wb, ws_summary, "Summary");
